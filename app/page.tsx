@@ -6,8 +6,8 @@ import { createClient } from '@/utils/supabase/client'; // Adjust this path to y
 // Initilalize Supabase Client
 const supabase = createClient(
   process.env.NEXT_PUBLIC_SUPABASE_URL!,
-  process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY!
-);
+  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+)
 
 // Define types based on your schema
 interface Category {
