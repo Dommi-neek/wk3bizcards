@@ -3,12 +3,6 @@
 import { useEffect, useState } from 'react';
 import { createClient } from '@/utils/supabase/client'; // Adjust this path to your setup
 
-// Initilalize Supabase Client
-const supabase = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL!,
-  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
-)
-
 // Define types based on your schema
 interface Category {
   name: string;
